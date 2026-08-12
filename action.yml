@@ -1,0 +1,17 @@
+name: PssbleTrngle/set-package-version
+description: updates package.json versions in root and workspace packages
+
+branding:
+  icon: tag
+  color: orange
+
+inputs:
+  version:
+    required: true
+    description: tag name
+  in:
+    description: target folder, default to cwd
+
+runs:
+  using: node24
+  main: dist/main.js
